@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,12 +24,6 @@
 		}
 		.header {
 			text-align: center;
-		}
-		.header h1 {
-			margin-bottom: 5px;
-		}
-		.header p {
-			color: #777;
 		}
 		.profile-photo {
 			width: 150px;
@@ -89,159 +83,84 @@
 			color: #555;
 			font-size: 14px;
 		}
-
 		a.custom-link {
 			color: #1e90ff;
 			text-decoration: none;
 			font-weight: 600;
 			transition: color 0.3s ease, text-shadow 0.3s ease;
 		}
-
 		a.custom-link:hover,
 		a.custom-link:focus {
 			color: #ff6f61;
 			text-shadow: 0 0 8px #ff6f61;
 			outline: none;
 		}
+		.language-switch {
+			margin-top: 10px;
+		}
+		.language-switch button {
+			background-color: #007BFF;
+			color: white;
+			border: none;
+			padding: 5px 10px;
+			margin: 0 5px;
+			border-radius: 20px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+			font-size: 14px;
+		}
+		.language-switch button:hover {
+			background-color: #0056b3;
+		}
 	</style>
 </head>
 <body>
 <div class="container">
 	<div class="header">
-		<img src="images/photo.p.jpeg" alt="Алексей Колобов" class="profile-photo">
-		<h1>Алексей Колобов</h1>
-		<p>Full Stack Developer</p>
+		<img src="images/photo.p.jpeg" alt="Aleksei Kolobov" class="profile-photo">
+		<h1>Aleksei Kolobov</h1>
+		<p id="role">Full Stack Developer</p>
 		<p>
 			<a class="custom-link" href="mailto:al.kolobov.dev@gmail.com">Email</a> |
-			<a class="custom-link" href="https://t.me/RaF75region" target="_blank" rel="noopener noreferrer">Telegram</a> |
-			<a class="custom-link" href="https://github.com/RaF75region?tab=projects" target="_blank" rel="noopener noreferrer">GitHub</a>
+			<a class="custom-link" href="https://t.me/RaF75region" target="_blank">Telegram</a> |
+			<a class="custom-link" href="https://github.com/RaF75region?tab=projects" target="_blank">GitHub</a>
 		</p>
-
-	</div>
-
-	<div class="section">
-		<h2>Обо мне</h2>
-		<p>Fullstack-разработчик с опытом более 6 лет. Специализация — разработка и поддержка веб-приложений, интеграция API, проектирование архитектуры. Опыт работы как в крупных компаниях, так и на фрилансе. Умею быстро разбираться в сложных проектах и эффективно решать задачи.</p>
-	</div>
-
-	<div class="section">
-		<h2>Опыт работы</h2>
-		<h3>Team lead RussianRunning</h3>
-		<p>2024 — 2025</p>
-		<ul>
-			<li>Разработка веб-приложений</li>
-			<li>Kubernetes, микросервисная архитектура</li>
-			<li>Kafka</li>
-			<li>Построение архитектуры</li>
-			<li>Kubernetes, микросервисная архитектура</li>
-			<li>Технологии: .NET 6 и >, helm</li>
-		</ul>
-
-		<h3>FakeDoor — Fullstack C# Developer</h3>
-		<p>2022 — 2024</p>
-		<ul>
-			<li>Построение архитектуры приложения</li>
-			<li>Настройка сред в среде Azure</li>
-			<li>Развертывание базы данных mssql</li>
-			<li>Развертывание приложений в Azure</li>
-			<li>Настройка CI/CD для приложений frontend и backend</li>
-			<li>Написание pipeline для развертывания в зависимости от среды в bitbucket</li>
-			<li>Разработка frontend на next js</li>
-			<li>Внедрение работы со сценами 3D с помощью сцен собранных на unity3d</li>
-			<li>Разработка backend на c#</li>
-			<li>написание Web API на asp net 6</li>
-			<li>Написание unit тестов</li>
-			<li>Настройка swagger для тестирования</li>
-			<li>Развертывание frontend происходит за счет контейнеров docker в azure</li>
-			<li>Администрирование прав доступа</li>
-			<li>Написание документации</li>
-			<li>Настройка env при развертывании</li>
-			<li>Разработка приложений с использованием контейнеров</li>
-			<li>Разработка инструментов для оптимизации работы</li>
-			<li>Разработка веб-приложений и 3D-компонентов</li>
-			<li>CI/CD с Azure, MSSQL, микросервисная архитектура</li>
-			<li>Технологии: .NET, Unity3D, Next.js</li>
-		</ul>
-
-		<h3>Северсталь — Fullstack Developer</h3>
-		<p>2021 — 2022</p>
-		<ul>
-			<li>Разработка REST API, UI на Blazor Server и WebAssembly</li>
-			<li>Работа с Oracle и PostgreSQL</li>
-			<li>Проектирование и реализация веб-интерфейсов</li>
-		</ul>
-
-		<h3>Skillbox — Преподаватель и разработчик</h3>
-		<p>2021 — 2022</p>
-		<ul>
-			<li>Создание обучающих курсов по C#, .NET и архитектуре</li>
-			<li>Ведение занятий и консультаций для студентов</li>
-		</ul>
-
-		<h3>ЦФТ — DevSecOps</h3>
-		<p>2021</p>
-		<ul>
-			<li>Интерфейсы для банковской системы</li>
-			<li>Микросервисная архитектура и REST-интеграции</li>
-		</ul>
-	</div>
-
-	<div class="section">
-		<h2>Services</h2>
-		<ul>
-			<li>Website Development (Landing Pages, eCommerce, Corporate Websites)</li>
-			<li>Web Application Development (React, Node.js, Python)</li>
-			<li>Mobile App Development (React Native, Flutter)</li>
-			<li>API Development & Integration (REST, GraphQL)</li>
-			<li>UI/UX Design and Prototyping</li>
-			<li>Consulting and Code Review</li>
-		</ul>
-	</div>
-
-	<div class="section projects">
-		<h2>Projects</h2>
-		<div class="project-grid">
-			<div class="project-card">
-				<img src="https://media.licdn.com/dms/image/v2/D4D3DAQERM3D5p_YKyg/image-scale_191_1128/image-scale_191_1128/0/1714146880491/fakedoor_cover?e=2147483647&v=beta&t=I-Rz0NMt2P6sa8wALokQF0WaQFqPGo0wDzjoW308ejI" alt="Portfolio Website">
-				<div class="content">
-					<h3>FakeDoor</h3>
-					<p>Учебная платформа подготовки к сертификации.</p>
-				</div>
-			</div>
-			<div class="project-card">
-				<img src="https://static.tildacdn.com/tild6239-6634-4165-b262-643938336533/ava.png" alt="E-commerce Platform">
-				<div class="content">
-					<h3>Система мониторинга</h3>
-					<p>Система мониторинга и оповещения инцидентов</p>
-				</div>
-			</div>
-			<div class="project-card">
-				<img src="https://www.drcsystems.com/wp-content/uploads/2023/08/What-is-best-practices-for-securing-mobile-apps.png" alt="Project Management Tool">
-				<div class="content">
-					<h3>AppSecurity</h3>
-					<p>Приложение отслеживающее уязвимости в исходном коде</p>
-				</div>
-			</div>
-			<div class="project-card">
-				<img src="https://runkeeper.com/cms/wp-content/uploads/sites/4/2022/12/Running-Image-12-640x341.jpg" alt="Mobile Fitness App">
-				<div class="content">
-					<h3>Mysport</h3>
-					<p>Платформа обработки и предоставления фотографий</p>
-				</div>
-			</div>
+		<div class="language-switch">
+			<button onclick="setLanguage('ru')">🇷🇺 Русский</button>
+			<button onclick="setLanguage('en')">🇬🇧 English</button>
 		</div>
 	</div>
 
 	<div class="section">
-		<h2>Education</h2>
-		<p><strong>Забайкальский Государственный Университет</strong> (2010 - 2015)</p>
+		<h2 data-i18n="about"></h2>
+		<p id="about-text"></p>
 	</div>
 
 	<div class="section">
-		<h2>Skills</h2>
+		<h2 data-i18n="experience"></h2>
+		<div id="experience-content"></div>
+	</div>
+
+	<div class="section">
+		<h2 data-i18n="services"></h2>
+		<ul id="services-list"></ul>
+	</div>
+
+	<div class="section projects">
+		<h2 data-i18n="projects"></h2>
+		<div class="project-grid" id="project-list"></div>
+	</div>
+
+	<div class="section">
+		<h2 data-i18n="education"></h2>
+		<p id="education-text"></p>
+	</div>
+
+	<div class="section">
+		<h2 data-i18n="skills"></h2>
 		<div class="skills">
 			<span>C#</span>
-			<span>NET</span>
+			<span>.NET</span>
 			<span>JavaScript</span>
 			<span>React</span>
 			<span>TypeScript</span>
@@ -251,7 +170,7 @@
 			<span>Git</span>
 			<span>REST API</span>
 			<span>GraphQL</span>
-			<span>Kuber</span>
+			<span>Kubernetes</span>
 			<span>Helm</span>
 			<span>Kafka</span>
 			<span>Unity 3D</span>
@@ -259,11 +178,173 @@
 	</div>
 
 	<div class="section">
-		<h2>Contact</h2>
+		<h2 data-i18n="contact"></h2>
 		<p><a class="custom-link" href="mailto:al.kolobov.dev@gmail.com">Email</a></p>
-		<p><a class="custom-link" href="https://t.me/RaF75region" target="_blank" rel="noopener noreferrer">Telegram</a></p>
-		<p><a class="custom-link" href="https://github.com/RaF75region?tab=projects" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+		<p><a class="custom-link" href="https://t.me/RaF75region" target="_blank">Telegram</a></p>
+		<p><a class="custom-link" href="https://github.com/RaF75region?tab=projects" target="_blank">GitHub</a></p>
 	</div>
 </div>
+
+<script>
+	const translations = {
+		ru: {
+			about: "Обо мне",
+			experience: "Опыт работы",
+			services: "Услуги",
+			projects: "Проекты",
+			education: "Образование",
+			skills: "Навыки",
+			contact: "Контакты",
+			role: "Full Stack Разработчик",
+			about_text: "Fullstack-разработчик с опытом более 6 лет. Специализация — разработка и поддержка веб-приложений, интеграция API, проектирование архитектуры. Опыт работы как в крупных компаниях, так и на фрилансе. Умею быстро разбираться в сложных проектах и эффективно решать задачи.",
+			education_text: "Забайкальский Государственный Университет (2010 - 2015)",
+			experience_list: [
+				{
+					title: "Team Lead RussianRunning",
+					period: "2024 — 2025",
+					tasks: ["Разработка веб-приложений", "Kubernetes, микросервисная архитектура", "Kafka", "Построение архитектуры", "Технологии: .NET 6 и >, helm"]
+				},
+				{
+					title: "FakeDoor — Fullstack C# Developer",
+					period: "2022 — 2024",
+					tasks: ["Разработка backend на c# (.NET 6)", "Frontend на Next.js", "CI/CD в Azure и Bitbucket", "Разработка 3D-сцен на Unity3D", "Развёртывание приложений в Docker", "Работа с MSSQL и настройка env"]
+				},
+				{
+					title: "Северсталь — Fullstack Developer",
+					period: "2021 — 2022",
+					tasks: ["Разработка REST API и UI на Blazor", "Работа с Oracle и PostgreSQL", "Проектирование веб-интерфейсов"]
+				},
+				{
+					title: "Skillbox — Преподаватель",
+					period: "2021 — 2022",
+					tasks: ["Курсы по C#, .NET, архитектуре", "Консультации студентов"]
+				},
+				{
+					title: "ЦФТ — DevSecOps",
+					period: "2021",
+					tasks: ["Интерфейсы для банковских систем", "Микросервисы и REST-интеграции"]
+				}
+			],
+			service_list: [
+				"Разработка сайтов (лендинги, e-commerce, корпоративные)",
+				"Разработка веб-приложений (React, Node.js, Python)",
+				"Разработка мобильных приложений (React Native, Flutter)",
+				"Разработка и интеграция API (REST, GraphQL)",
+				"UI/UX дизайн и прототипирование",
+				"Консалтинг и ревью кода"
+			],
+			project_list: [
+				{title: "FakeDoor", desc: "Учебная платформа подготовки к сертификации.", img: "https://media.licdn.com/dms/image/v2/D4D3DAQERM3D5p_YKyg/image-scale_191_1128/image-scale_191_1128/0/1714146880491/fakedoor_cover?e=2147483647&v=beta&t=I-Rz0NMt2P6sa8wALokQF0WaQFqPGo0wDzjoW308ejI"},
+				{title: "Система мониторинга", desc: "Система мониторинга и оповещения инцидентов.", img: "https://static.tildacdn.com/tild6239-6634-4165-b262-643938336533/ava.png"},
+				{title: "AppSecurity", desc: "Приложение для отслеживания уязвимостей в коде.", img: "https://www.drcsystems.com/wp-content/uploads/2023/08/What-is-best-practices-for-securing-mobile-apps.png"},
+				{title: "Mysport", desc: "Платформа обработки и предоставления спортивных фотографий.", img: "https://runkeeper.com/cms/wp-content/uploads/sites/4/2022/12/Running-Image-12-640x341.jpg"}
+			]
+		},
+		en: {
+			about: "About Me",
+			experience: "Experience",
+			services: "Services",
+			projects: "Projects",
+			education: "Education",
+			skills: "Skills",
+			contact: "Contact",
+			role: "Full Stack Developer",
+			about_text: "Full-stack developer with over 6 years of experience. Specialized in web applications, API integration, and architecture design. Worked both in large corporations and freelance. Able to quickly dive into complex projects and deliver effective solutions.",
+			education_text: "Transbaikal State University (2010 - 2015)",
+			experience_list: [
+				{
+					title: "Team Lead RussianRunning",
+					period: "2024 — 2025",
+					tasks: ["Web application development", "Kubernetes, microservice architecture", "Kafka", "Architecture design", "Technologies: .NET 6+, Helm"]
+				},
+				{
+					title: "FakeDoor — Fullstack C# Developer",
+					period: "2022 — 2024",
+					tasks: ["Backend development in C# (.NET 6)", "Frontend with Next.js", "CI/CD in Azure and Bitbucket", "3D scene development in Unity3D", "Deployment using Docker", "Working with MSSQL and environment configuration"]
+				},
+				{
+					title: "Severstal — Fullstack Developer",
+					period: "2021 — 2022",
+					tasks: ["REST API and UI development with Blazor", "Working with Oracle and PostgreSQL", "Web interface design"]
+				},
+				{
+					title: "Skillbox — Lecturer",
+					period: "2021 — 2022",
+					tasks: ["Courses in C#, .NET, architecture", "Student consultations"]
+				},
+				{
+					title: "CFT — DevSecOps",
+					period: "2021",
+					tasks: ["Interfaces for banking systems", "Microservices and REST integrations"]
+				}
+			],
+			service_list: [
+				"Website development (Landing pages, e-commerce, corporate websites)",
+				"Web application development (React, Node.js, Python)",
+				"Mobile application development (React Native, Flutter)",
+				"API development and integration (REST, GraphQL)",
+				"UI/UX design and prototyping",
+				"Consulting and code review"
+			],
+			project_list: [
+				{title: "FakeDoor", desc: "Educational platform for certification preparation.", img: "https://media.licdn.com/dms/image/v2/D4D3DAQERM3D5p_YKyg/image-scale_191_1128/image-scale_191_1128/0/1714146880491/fakedoor_cover?e=2147483647&v=beta&t=I-Rz0NMt2P6sa8wALokQF0WaQFqPGo0wDzjoW308ejI"},
+				{title: "Monitoring System", desc: "System for incident monitoring and alerting.", img: "https://static.tildacdn.com/tild6239-6634-4165-b262-643938336533/ava.png"},
+				{title: "AppSecurity", desc: "Application for tracking code vulnerabilities.", img: "https://www.drcsystems.com/wp-content/uploads/2023/08/What-is-best-practices-for-securing-mobile-apps.png"},
+				{title: "Mysport", desc: "Platform for processing and delivering sports photos.", img: "https://runkeeper.com/cms/wp-content/uploads/sites/4/2022/12/Running-Image-12-640x341.jpg"}
+			]
+		}
+	};
+
+	function setLanguage(lang) {
+		document.querySelector('html').lang = lang;
+		const t = translations[lang];
+
+		document.getElementById('role').textContent = t.role;
+		document.getElementById('about-text').textContent = t.about_text;
+		document.getElementById('education-text').textContent = t.education_text;
+
+		document.querySelectorAll('[data-i18n]').forEach(el => {
+			const key = el.getAttribute('data-i18n');
+			if (t[key]) {
+				el.textContent = t[key];
+			}
+		});
+
+		// Experience
+		const exp = document.getElementById('experience-content');
+		exp.innerHTML = '';
+		t.experience_list.forEach(job => {
+			const block = document.createElement('div');
+			block.innerHTML = `<h3>${job.title}</h3><p>${job.period}</p><ul>${job.tasks.map(task => `<li>${task}</li>`).join('')}</ul>`;
+			exp.appendChild(block);
+		});
+
+		// Services
+		const services = document.getElementById('services-list');
+		services.innerHTML = '';
+		t.service_list.forEach(item => {
+			const li = document.createElement('li');
+			li.textContent = item;
+			services.appendChild(li);
+		});
+
+		// Projects
+		const projects = document.getElementById('project-list');
+		projects.innerHTML = '';
+		t.project_list.forEach(pr => {
+			projects.innerHTML += `
+				<div class="project-card">
+					<img src="${pr.img}" alt="${pr.title}">
+					<div class="content">
+						<h3>${pr.title}</h3>
+						<p>${pr.desc}</p>
+					</div>
+				</div>`;
+		});
+	}
+
+	// Default language
+	setLanguage('ru');
+</script>
 </body>
 </html>
