@@ -112,6 +112,45 @@
 		.language-switch button:hover {
 			background-color: #0056b3;
 		}
+		.project-card .project-badge {
+			display: inline-block;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			font-size: 11px;
+			padding: 3px 10px;
+			border-radius: 12px;
+			margin-bottom: 8px;
+			font-weight: 600;
+			letter-spacing: 0.3px;
+		}
+		.project-card .project-tags {
+			margin-top: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+		}
+		.project-card .project-tags span {
+			background: #e8f0fe;
+			color: #1a73e8;
+			font-size: 11px;
+			padding: 2px 8px;
+			border-radius: 10px;
+			font-weight: 500;
+		}
+		.project-card a.project-link {
+			color: #222;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+		.project-card a.project-link:hover {
+			color: #1a73e8;
+		}
+		.project-card.no-image {
+			background: linear-gradient(135deg, #f0f4ff 0%, #f5f0ff 100%);
+		}
+		.project-card.no-image .content {
+			padding: 20px 15px;
+		}
 	</style>
 </head>
 <body>
@@ -174,6 +213,13 @@
 			<span>Helm</span>
 			<span>Kafka</span>
 			<span>Unity 3D</span>
+			<span>n8n</span>
+			<span>AI / RAG</span>
+			<span>Telegram Bot API</span>
+			<span>PostgreSQL</span>
+			<span>Docker</span>
+			<span>Next.js</span>
+			<span>Flutter</span>
 		</div>
 	</div>
 
@@ -199,6 +245,17 @@
 			about_text: "Fullstack-разработчик с опытом более 6 лет. Специализация — разработка и поддержка веб-приложений, интеграция API, проектирование архитектуры. Опыт работы как в крупных компаниях, так и на фрилансе. Умею быстро разбираться в сложных проектах и эффективно решать задачи.",
 			education_text: "Забайкальский Государственный Университет (2010 - 2015)",
 			experience_list: [
+				{
+					title: "Amulex — Full Stack Developer",
+					period: "2025 — 2026",
+					tasks: [
+						"Telegram Mini App для юридических AI-консультаций (@AmulexFriendBot, @amulex_community)",
+						"Автоматизация бизнес-процессов через n8n с интеграцией платёжной системы",
+						"Разработка соцсети «АСЬКА» с внедрённым AI-агентом для юристов",
+						"Внедрение RAG-системы на базе юридических данных",
+						"MVP платформы по оформлению банкротства (Zanovo)"
+					]
+				},
 				{
 					title: "Team Lead RussianRunning",
 					period: "2024 — 2025",
@@ -234,6 +291,10 @@
 				"Консалтинг и ревью кода"
 			],
 			project_list: [
+				{title: "Telegram Mini App — Твой Друг Юрист", desc: "Мини-приложение для Telegram: AI-юрист, подписки, бонусы и генерация юридических отчётов.", img: "images/amulex-miniapp-1.png", tags: ["Telegram Bot API", "React", "Node.js", "PostgreSQL"], link: "https://t.me/AmulexFriendBot", period: "Amulex 2025–2026"},
+				{title: "n8n — Автоматизация и AI-агенты", desc: "Автоматизация Telegram-бота: обработка сообщений, AI-агенты, RAG-система, интеграция платёжной системы.", img: "images/amulex-n8n-4.png", tags: ["n8n", "AI Agent", "RAG", "PostgreSQL", "Webhook"], period: "Amulex 2025–2026"},
+				{title: "АСЬКА — Соцсеть для юристов", desc: "Социальная сеть с AI-агентом: посты, категории, профили, поиск по юридическим тематикам.", img: "images/amulex-aska-1.png", tags: ["React", "TypeScript", "AI Agent", "Node.js"], link: "https://xn--80aa3a1a9c.com", period: "Amulex 2025–2026"},
+				{title: "Zanovo — MVP Банкротство", desc: "Платформа оформления банкротства физлиц: анкетирование, сбор документов, генерация заявлений в суд. Backend на C# с FastEndpoints и интеграцией Bitrix.", img: "images/zanovo-1.png", tags: ["C#", "FastEndpoints", "ORM", "Bitrix", "PostgreSQL"], link: "https://app.zanovo.io", period: "Amulex 2025–2026"},
 				{title: "FakeDoor", desc: "Учебная платформа подготовки к сертификации.", img: "https://media.licdn.com/dms/image/v2/D4D3DAQERM3D5p_YKyg/image-scale_191_1128/image-scale_191_1128/0/1714146880491/fakedoor_cover?e=2147483647&v=beta&t=I-Rz0NMt2P6sa8wALokQF0WaQFqPGo0wDzjoW308ejI"},
 				{title: "Система мониторинга", desc: "Система мониторинга и оповещения инцидентов.", img: "https://static.tildacdn.com/tild6239-6634-4165-b262-643938336533/ava.png"},
 				{title: "AppSecurity", desc: "Приложение для отслеживания уязвимостей в коде.", img: "https://www.drcsystems.com/wp-content/uploads/2023/08/What-is-best-practices-for-securing-mobile-apps.png"},
@@ -252,6 +313,17 @@
 			about_text: "Full-stack developer with over 6 years of experience. Specialized in web applications, API integration, and architecture design. Worked both in large corporations and freelance. Able to quickly dive into complex projects and deliver effective solutions.",
 			education_text: "Transbaikal State University (2010 - 2015)",
 			experience_list: [
+				{
+					title: "Amulex — Full Stack Developer",
+					period: "2025 — 2026",
+					tasks: [
+						"Telegram Mini App for AI-powered legal consultations (@AmulexFriendBot, @amulex_community)",
+						"Business process automation via n8n with payment system integration",
+						"Social network 'АСЬКА' with embedded AI agent for lawyers",
+						"RAG system implementation based on legal knowledge base",
+						"MVP of bankruptcy application platform (Zanovo)"
+					]
+				},
 				{
 					title: "Team Lead RussianRunning",
 					period: "2024 — 2025",
@@ -287,6 +359,10 @@
 				"Consulting and code review"
 			],
 			project_list: [
+				{title: "Telegram Mini App — Your Friend Lawyer", desc: "Telegram mini app: AI lawyer, subscriptions, bonuses and legal report generation.", img: "images/amulex-miniapp-1.png", tags: ["Telegram Bot API", "React", "Node.js", "PostgreSQL"], link: "https://t.me/AmulexFriendBot", period: "Amulex 2025–2026"},
+				{title: "n8n — Automation & AI Agents", desc: "Telegram bot automation via n8n: message processing, AI agents, RAG system, payment integration.", img: "images/amulex-n8n-4.png", tags: ["n8n", "AI Agent", "RAG", "PostgreSQL", "Webhook"], period: "Amulex 2025–2026"},
+				{title: "АСЬКА — Social Network for Lawyers", desc: "Social network with AI agent: posts, categories, user profiles, legal topic search.", img: "images/amulex-aska-1.png", tags: ["React", "TypeScript", "AI Agent", "Node.js"], link: "https://xn--80aa3a1a9c.com", period: "Amulex 2025–2026"},
+				{title: "Zanovo — Bankruptcy MVP", desc: "Personal bankruptcy platform: questionnaire, document collection, court statement generation. C# backend with FastEndpoints and Bitrix integration.", img: "images/zanovo-1.png", tags: ["C#", "FastEndpoints", "ORM", "Bitrix", "PostgreSQL"], link: "https://app.zanovo.io", period: "Amulex 2025–2026"},
 				{title: "FakeDoor", desc: "Educational platform for certification preparation.", img: "https://media.licdn.com/dms/image/v2/D4D3DAQERM3D5p_YKyg/image-scale_191_1128/image-scale_191_1128/0/1714146880491/fakedoor_cover?e=2147483647&v=beta&t=I-Rz0NMt2P6sa8wALokQF0WaQFqPGo0wDzjoW308ejI"},
 				{title: "Monitoring System", desc: "System for incident monitoring and alerting.", img: "https://static.tildacdn.com/tild6239-6634-4165-b262-643938336533/ava.png"},
 				{title: "AppSecurity", desc: "Application for tracking code vulnerabilities.", img: "https://www.drcsystems.com/wp-content/uploads/2023/08/What-is-best-practices-for-securing-mobile-apps.png"},
@@ -332,12 +408,20 @@
 		const projects = document.getElementById('project-list');
 		projects.innerHTML = '';
 		t.project_list.forEach(pr => {
+			const imgHtml = pr.img ? `<img src="${pr.img}" alt="${pr.title}">` : '';
+			const noImgClass = pr.img ? '' : ' no-image';
+			const linkStart = pr.link ? `<a href="${pr.link}" target="_blank" class="project-link">` : '';
+			const linkEnd = pr.link ? '</a>' : '';
+			const tagsHtml = pr.tags ? `<div class="project-tags">${pr.tags.map(tag => `<span>${tag}</span>`).join('')}</div>` : '';
+			const badgeHtml = pr.period ? `<span class="project-badge">${pr.period}</span>` : '';
 			projects.innerHTML += `
-				<div class="project-card">
-					<img src="${pr.img}" alt="${pr.title}">
+				<div class="project-card${noImgClass}">
+					${imgHtml}
 					<div class="content">
-						<h3>${pr.title}</h3>
+						${badgeHtml}
+						<h3>${linkStart}${pr.title}${linkEnd}</h3>
 						<p>${pr.desc}</p>
+						${tagsHtml}
 					</div>
 				</div>`;
 		});
